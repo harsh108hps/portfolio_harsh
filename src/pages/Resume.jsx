@@ -20,12 +20,15 @@ const Resume = () => {
           Click the button below to download my resume directly.
         </p>
 
-        <a
-          href="https://drive.google.com/uc?export=download&id=1vNqR_SN1sKis8xRj3WDt9DJJKi1Qd38l"
-          className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
-        >
-          📄 Download Resume
-        </a>
+      <a
+  href="https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
+>
+  📄 Download Resume
+</a>
+
       </div>
     </section>
   );

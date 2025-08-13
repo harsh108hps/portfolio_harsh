@@ -63,15 +63,14 @@ const Contact = () => {
           </div>
 
           {/* View Resume Button */}
-          <a
-            href="https://drive.google.com/file/d/1vNqR_SN1sKis8xRj3WDt9DJJKi1Qd38l/view?usp=drivesdk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-block w-full text-center px-6 py-3 rounded-lg font-semibold 
-              bg-gradient-to-r from-cyan-500 to-purple-500 hover:scale-105 transition-transform shadow-lg"
-          >
-            View Resume
-          </a>
+         <a
+  href="https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
+>
+  📄 View Resume
+</a>
         </div>
       </div>
     </section>
