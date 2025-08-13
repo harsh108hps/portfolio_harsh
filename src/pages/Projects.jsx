@@ -8,7 +8,7 @@ const Projects = () => {
         "A full-stack meme-sharing platform with meme creation, AI captions, and social features.",
       link: "https://memegram-neon.vercel.app/",
       github: "https://github.com/harsh108hps/MEMEGRAM",
-      image: "public/Home.png",
+      image: "/Home.png",
       featured: true,
     },
     {
@@ -17,7 +17,7 @@ const Projects = () => {
         "Track your income, expenses, goals, and financial health with visual analytics.",
       link: "https://personal-finance-tracker-15o8.vercel.app/",
       github: "https://github.com/harsh108hps/personal-finance-tracker",
-      image: "public/personalfinance.png",
+      image: "/personalfinance.png",
     },
     {
       title: "Landlord-Tenant Communication App",
@@ -25,7 +25,7 @@ const Projects = () => {
         "A real-time platform for rent tracking, issue management, messaging, and dashboards.",
       link: "https://landlord-tenant-app-seven.vercel.app/",
       github: "https://github.com/harsh108hps/landlord-tenant-app",
-      image: "public/rentease.png",
+      image: "/rentease.png",
     },
   ];
 
