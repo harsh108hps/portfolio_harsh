@@ -95,14 +95,12 @@ const Home = () => {
               View My Work 🚀
             </button>
 
-            <button
-              onClick={handleResumeClick}
-              className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 px-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
-            >
-              📄 Download Resume
-            </button>
-          </motion.div>
-        </div>
+           <button
+  onClick={handleResumeClick}
+  className="bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 px-6 sm:px-7 rounded-full shadow-md hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+>
+  📄 Download Resume
+</button>
 
         {/* Right Side: Profile Picture */}
         <motion.div
