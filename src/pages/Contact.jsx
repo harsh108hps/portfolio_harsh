@@ -1,6 +1,27 @@
 import { FaPhoneAlt, FaEnvelope, FaUser, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
+  // Resume URLs
+  const viewUrl =
+    "https://drive.google.com/file/d/1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl/view?usp=drivesdk";
+  const downloadUrl =
+    "https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl";
+
+  const handleResumeClick = () => {
+    // Open in new tab
+    window.open(viewUrl, "_blank");
+
+    // Trigger download
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = downloadUrl;
+      link.download = "Harsh_Pratap_Singh_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }, 500);
+  };
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-24 px-6 flex flex-col items-center">
       <h2
@@ -29,9 +50,7 @@ const Contact = () => {
             <div className="flex items-center space-x-4">
               <FaEnvelope className="text-yellow-400 text-2xl" />
               <a
-                href="https://mail.google.com/mail/?view=cm&to=harshpratapsingh39900@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:harshpratapsingh39900@gmail.com"
                 className="text-lg font-medium break-all hover:underline"
               >
                 harshpratapsingh39900@gmail.com
@@ -62,15 +81,13 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* View Resume Button */}
-         <a
-  href="https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
->
-  📄 View Resume
-</a>
+          {/* View & Download Resume Button */}
+          <button
+            onClick={handleResumeClick}
+            className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
+          >
+            📄 Download Resume
+          </button>
         </div>
       </div>
     </section>

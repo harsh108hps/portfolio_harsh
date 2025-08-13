@@ -1,6 +1,25 @@
 import React from "react";
 
 const Resume = () => {
+  // Google Drive file details
+  const viewUrl = "https://drive.google.com/file/d/1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl/view?usp=drivesdk";
+  const downloadUrl = "https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl";
+
+  const handleResumeClick = () => {
+    // Open in new tab for viewing
+    window.open(viewUrl, "_blank");
+
+    // Trigger download
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = downloadUrl;
+      link.download = "Harsh_Pratap_Singh_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }, 500); // Delay so both actions work smoothly
+  };
+
   return (
     <section className="min-h-screen pt-24 bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white flex flex-col items-center px-4">
       
@@ -17,18 +36,15 @@ const Resume = () => {
         </h2>
 
         <p className="text-gray-300">
-          Click the button below to download my resume directly.
+          Click the button below to view and download my resume.
         </p>
 
-      <a
-  href="https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
->
-  📄 Download Resume
-</a>
-
+        <button
+          onClick={handleResumeClick}
+          className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
+        >
+          📄 View & Download Resume
+        </button>
       </div>
     </section>
   );

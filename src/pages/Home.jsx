@@ -10,6 +10,25 @@ const Home = () => {
     if (section) section.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Google Drive file details
+  const viewUrl = "https://drive.google.com/file/d/1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl/view?usp=drivesdk";
+  const downloadUrl = "https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl";
+
+  const handleResumeClick = () => {
+    // Open in new tab for viewing
+    window.open(viewUrl, "_blank");
+
+    // Trigger download
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = downloadUrl;
+      link.download = "Harsh_Pratap_Singh_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }, 500);
+  };
+
   return (
     <section
       className="relative w-full min-h-screen flex items-center justify-center text-white px-4 sm:px-6 md:px-8"
@@ -76,14 +95,12 @@ const Home = () => {
               View My Work 🚀
             </button>
 
-            <a
-  href="https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-full bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
->
-  📄 Download Resume
-</a>
+            <button
+              onClick={handleResumeClick}
+              className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 px-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 text-center"
+            >
+              📄 Download Resume
+            </button>
           </motion.div>
         </div>
 
