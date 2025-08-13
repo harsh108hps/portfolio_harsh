@@ -1,11 +1,11 @@
 import { FaPhoneAlt, FaEnvelope, FaUser, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
-  // Resume URLs
+  // Updated Google Drive URLs
   const viewUrl =
-    "https://drive.google.com/file/d/1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl/view?usp=drivesdk";
+    "https://drive.google.com/file/d/10UMm2WXACdFjgdUa-Mp7VqU43BuWkL1h/view";
   const downloadUrl =
-    "https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl";
+    "https://drive.google.com/uc?export=download&id=10UMm2WXACdFjgdUa-Mp7VqU43BuWkL1h";
 
   const handleResumeClick = () => {
     // Open in new tab

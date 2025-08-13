@@ -10,9 +10,9 @@ const Home = () => {
     if (section) section.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Google Drive file details
-  const viewUrl = "https://drive.google.com/file/d/1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl/view?usp=drivesdk";
-  const downloadUrl = "https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl";
+  // Updated Google Drive file details
+  const viewUrl = "https://drive.google.com/file/d/10UMm2WXACdFjgdUa-Mp7VqU43BuWkL1h/view";
+  const downloadUrl = "https://drive.google.com/uc?export=download&id=10UMm2WXACdFjgdUa-Mp7VqU43BuWkL1h";
 
   const handleResumeClick = () => {
     // Open in new tab for viewing
@@ -95,12 +95,14 @@ const Home = () => {
               View My Work 🚀
             </button>
 
-           <button
-  onClick={handleResumeClick}
-  className="bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 px-6 sm:px-7 rounded-full shadow-md hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
->
-  📄 Download Resume
-</button>
+            <button
+              onClick={handleResumeClick}
+              className="bg-gradient-to-r from-yellow-400 via-pink-500 to-cyan-400 text-black font-semibold py-3 px-6 sm:px-7 rounded-full shadow-md hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+            >
+              📄 Download Resume
+            </button>
+          </motion.div>
+        </div>
 
         {/* Right Side: Profile Picture */}
         <motion.div

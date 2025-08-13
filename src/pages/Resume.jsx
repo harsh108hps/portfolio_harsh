@@ -1,9 +1,9 @@
 import React from "react";
 
 const Resume = () => {
-  // Google Drive file details
-  const viewUrl = "https://drive.google.com/file/d/1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl/view?usp=drivesdk";
-  const downloadUrl = "https://drive.google.com/uc?export=download&id=1QyrX_-S4X6_Sjdh_7YtwFhh2YiVF4snl";
+  // Updated Google Drive file details
+  const viewUrl = "https://drive.google.com/file/d/10UMm2WXACdFjgdUa-Mp7VqU43BuWkL1h/view";
+  const downloadUrl = "https://drive.google.com/uc?export=download&id=10UMm2WXACdFjgdUa-Mp7VqU43BuWkL1h";
 
   const handleResumeClick = () => {
     // Open in new tab for viewing
