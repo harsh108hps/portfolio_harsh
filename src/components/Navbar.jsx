@@ -21,7 +21,7 @@ const Navbar = () => {
         transition={{ duration: 0.6 }}
         className="text-2xl font-extrabold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent cursor-pointer"
       >
-        MyPortfolio
+        Harsh
       </motion.h1>
 
       {/* Desktop Links */}

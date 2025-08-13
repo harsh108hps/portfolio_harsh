@@ -1,5 +1,4 @@
 import React from "react";
-import profilePic from "../assets/profile.jpg";
 import hackathonCert from "../assets/hackathon.jpeg";
 import { motion } from "framer-motion";
 
@@ -26,21 +25,7 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Profile Picture */}
-        <div className="flex justify-center">
-          <motion.div
-            className="w-40 h-40 rounded-full p-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 shadow-lg"
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.6 }}
-          >
-            <img
-              src={profilePic}
-              alt="Harsh Pratap Singh"
-              className="w-full h-full rounded-full object-cover border-4 border-gray-900"
-            />
-          </motion.div>
-        </div>
+    
 
         {/* About Heading */}
         <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
